@@ -1,0 +1,109 @@
+@import '../../styles/global-vars';
+
+body * {
+  font-family: Nunito, sans-serif;
+  font-weight: 300;
+}
+
+.ant-message-notice-content {
+  padding: 0;
+
+  .ant-message-custom-content {
+    font-weight: 300 !important;
+    width: 100%;
+    height: 100%;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 3px !important;
+  }
+
+  .anticon {
+    color: white;
+  }
+
+  .ant-message-error {
+    background-color: #F22735;
+  }
+
+  .ant-message-warning {
+    background-color: #F8AC30;
+  }
+
+  .ant-message-success {
+    background-color: #56C22D;
+  }
+
+  .ant-message-info {
+    background-color: #2592FC;
+  }
+}
+
+
+#app {
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+  background-color: #F2F4F8;
+
+  > .ant-layout {
+    height: 100%;
+  }
+
+  .ant-layout {
+    background-color: #fff;
+  }
+
+  .page-content {
+    margin: 15px auto;
+    height: calc(100vh - 84px);
+    width: $site-content-width;
+  }
+
+  .content-wrapper {
+    background-color: #fff;
+    min-height: 280px;
+    border-radius: 3px;
+    margin-left: 40px;
+  }
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+// Page
+
+.page-title {
+  font-size: 1.4em !important;
+
+  .breadcrumb-link {
+    color: $primary-color;
+    cursor: pointer;
+  }
+
+  .breadcrumb-link, .breadcrumb-current-page {
+    font-weight: 400;
+  }
+}
+
+// Tooltip
+
+.ant-tooltip {
+  font-size: .8em;
+
+  .ant-tooltip-inner {
+    font-weight: 300;
+    min-height: 27px;
+    padding: 6px 6px 4px 6px;
+  }
+}

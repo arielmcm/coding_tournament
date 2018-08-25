@@ -1,0 +1,23 @@
+{
+  "name": "Category",
+  "plural": "categories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "forceId": false
+  },
+  "properties": {
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "acls": [],
+  "methods": {}
+}

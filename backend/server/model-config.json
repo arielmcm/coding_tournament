@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models",
+      "../app/resources/event",
+      "../app/resources/category"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Event": {
+    "dataSource": "mongodb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "create": true,
+          "findById": true,
+          "deleteById": true,
+          "doSomething": true,
+          "patchAttributes": true
+        }
+      }
+    }
+  },
+  "Category": {
+    "dataSource": "mongodb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true
+        }
+      }
+    }
+  }
+}

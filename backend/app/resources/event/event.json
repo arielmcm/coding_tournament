@@ -1,0 +1,31 @@
+{
+  "name": "Event",
+  "plural": "events",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "forceId": false
+  },
+  "properties": {
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "GeoPoint",
+      "required": true
+    }
+  },
+  "validations": [],
+  "acls": [],
+  "methods": {}
+}
